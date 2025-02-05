@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Loli G.F.">
+    <meta name="description" content="Basic HTML Website Project. Exercise from roadmap.sh">
+    <meta name="keywords" content="HTML">
+    <meta property="og:title" content="Basic HTML Website Project - Contact">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="https://roadmap.sh/projects/basic-html-website">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://kit.fontawesome.com/e8ddcc3d14.js" crossorigin="anonymous"></script>
+    <title>Basic HTML Website Project - Contact</title>
+</head>
+<body>
+    <div class="body_container">
+        <header class="header_container">
+            <div class="flex-container">
+                <div class="logo_name_container">
+                    <img src="./assets/img/logo.jpg" alt="Logo Basic HTML Website" />
+                    <p>Loli G.F.</p>
+                </div>
+                <nav id="nav_bar">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="nav_bar_color">|</li>
+                        <li><a href="projects.html">Proyectos</a></li>
+                        <li class="nav_bar_color">|</li>
+                        <li><a href="articles.html">Artículos</a></li>
+                        <li class="nav_bar_color">|</li>
+                        <li><a href="contact.html" class="current-menu-item">Contacta</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1>Contacta</h1>
+        </header>
+        <main class="form_container_flexbox">
+
+            <h2>Envíame un mensaje</h2>
+
+            <form name="form" method="post" action="" autocomplete="off" accept-charset="utf-8">
+
+                <fieldset>
+                    <div class="form_container_flexbox_fieldset">
+                        <label for="name" class="required">Nombre:</label>
+                        <input type="text" id="name" name="Name" minlength="5" maxlength="20" placeholder="Loli" pattern="[A-Za-z]{3,20}+" title="Just letters. Between 3 and 20 characters" autofocus required/>
+                        <label for="email" class="required">Email:</label>
+                        <input type="email" id="email" name="Email" placeholder="loli@email.com" required/>
+                        <label for="message" class="required">Mensaje:</label>
+                        <textarea name="message" id="message" placeholder="Hola, me pongo en contacto contigo con el propósito de explorar la posibilidad de colaborar en un proyecto con mi equipo...." cols="32" rows="8" required></textarea>
+                    </div>
+
+                    <!--<input type="checkbox" id="privacy_policy" name="privacy_policy" /><label for="privacy_policy">I accept the privacy policy</label>-->
+
+                    <div class="submit_and_reset">
+                        <input type="submit" value="Enviar" class="form_submit"/>
+                        <input type="reset" value="Borrar" class="form_reset"/>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <p>&copy Todos los derechos reservados 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

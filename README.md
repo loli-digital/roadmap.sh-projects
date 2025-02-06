@@ -5,4 +5,4 @@ https://roadmap.sh/projects/changelog-component
 <p>Siéntete libre de personalizar el diseño y la disposición del componente como creas conveniente. El objetivo debe ser crear un componente bien estructurado y responsivo que se pueda integrar fácilmente en un sitio web.</p>
 <p>Después de completar este proyecto, comprenderá bien cómo crear diseños simples con HTML y CSS. Puede mejorar aún más sus habilidades explorando diseños más complejos, como cuadrículas y flexbox, en proyectos futuros.</p>
 <p>Esta es mi posible solución:</p>
-<img src="https://github.com/user-attachments/assets/09c5b4c2-b00a-4794-88f5-cf1ba76e7fd7" alt="Changelog Component"/>
+<img src="changelog_component.png" alt="Changelog Component"/>

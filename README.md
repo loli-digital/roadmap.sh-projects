@@ -17,3 +17,12 @@
 </ul>
 <p>https://roadmap.sh/projects/portfolio-website</p>
 <p>https://loli-gf.pages.dev/</p>
+
+<p>Imágenes del proyecto:</p>
+<img src="index.png" alt="Página principal">
+<p>Proyectos:</p>
+<img src="projects.png" alt="Página con los proyectos">
+<p>Artículos:</p>
+<img src="articles.png" alt="Página con artículos">
+<p>Contacto:</p>
+<img src="contact_form.png" alt="Página de contacto">

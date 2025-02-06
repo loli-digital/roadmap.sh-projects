@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+    background-color: #1A2031;
+}
+
+.layout{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 35rem;
+    height: auto;
+    padding: 2.5rem;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px rgb(11, 151, 176);
+}
+
+.card__user{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user__img{
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid rgb(11, 151, 176);
+    box-shadow: 0px 0px 5px rgb(11, 151, 176);
+}
+
+.user__name__description{
+    margin-left: 2rem;
+    display: block;
+    flex-direction: column;
+}

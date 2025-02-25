@@ -1,4 +1,4 @@
-#Formulario accesible
+<h1>Formulario accesible</h1>
 <p>Ejercicio de roadmap.sh que consiste en crear un formulario accesible</p>
 <p>En este proyecto, se requiere crear una interfaz de usuario de formulario utilizando únicamente HTML y CSS. El formulario incluirá campos para un nombre completo, correo electrónico, contraseña y confirmación de contraseña, junto con un botón para alternar la visibilidad del texto de la contraseña. Además, el formulario contará con una barra de progreso de completitud y una lista de verificación de requisitos que se deben cumplir para que el formulario alcance el 100 % de completitud. Si bien esta versión del formulario no será funcional, será un componente de interfaz de usuario estático que se puede mejorar con JavaScript en el futuro.</p>
 <p>El objetivo de este proyecto no es solo ayudarte a practicar HTML y CSS, sino también enfocarte en crear un formulario accesible que sea fácil de usar para todos los usuarios, incluidos aquellos con discapacidades. </p>

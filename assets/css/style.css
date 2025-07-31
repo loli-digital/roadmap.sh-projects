@@ -1,0 +1,75 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(188, 24%, 48%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.layout {
+    min-width: 90vw;
+    margin-top: 2rem;
+}
+
+.acordeon {
+    width: 45vw;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: hsl(155, 54%, 93%);;
+}
+
+.acordeon .contenedor {
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+hr {
+    margin: 2.5rem 0;
+    border: 1px solid rgb(15, 138, 107);
+}
+
+.etiqueta {
+    padding: 1rem;
+    position: relative;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.etiqueta::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    transform: translateY(-50%);
+}
+
+.etiqueta, .contenido {
+    font-size: 1.6rem;
+}
+
+.contenido {
+    width: 70rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.contenedor.activa .contenido {
+    max-height: 100rem;
+}
+
+.contenedor.activa .etiqueta::before {
+    content: '-';
+    font-size: 3rem;
+}

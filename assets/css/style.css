@@ -1,0 +1,150 @@
+:root {
+    --bg-color: hsla(34, 72%, 69%, 0.586);
+    --text-color: hsl(0, 0%, 0%);
+    --cookie-color: hsl(40, 79%, 33%);
+    --footer-color: rgb(233, 131, 73);
+    --font-family-header: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --font-family-text: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --font-family-cookies: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 90vw;
+    background-color: var(--bg-color);
+}
+
+.layout {
+    margin: 0 auto;
+    padding: 5rem 0;
+    max-width: 60vw;
+}
+
+h1, h2, p {
+    color: var(--text-color)
+}
+
+h1, h2 {
+    font-family: var(--font-family-header);
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 3rem;
+    font-size: 4rem;
+}
+
+h2 {
+    padding: 3rem 0;
+    font-size: 3rem;
+}
+
+p {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    font-family: var(--font-family-text)
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/*Banner cookies*/
+.banner-cookies {
+    padding: 2rem;
+    width: 25%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: hsl(34, 57%, 63%);
+    border: 1px solid var(--cookie-color);
+    border-radius: 10px;
+    font-family: var(--font-family-cookies);
+    text-align: center;
+    z-index: 1000;
+    
+    opacity: 0;
+    transform: translateY(100%);
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.banner-cookies.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.banner-cookies p a {
+    text-decoration: underline;
+}
+
+.titulo-cookies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-cookies img {
+    width: 4rem;
+}
+
+.titulo-cookies h3 {
+    font-size: 2rem;
+}
+
+#btn-cookies {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--cookie-color);
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/*Footer*/
+footer {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-color);
+}
+
+footer p {
+    text-align: center;
+}
+
+.autora {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.fa-brands {
+    font-size: 4rem;
+    transition: transform .5s ease-in-out;
+}
+
+.fa-brands:hover {
+    transform: rotate(-10deg);
+}

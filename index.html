@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de edad</title>
+    <script src="https://kit.fontawesome.com/e8ddcc3d14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <main class="layout">
+        <h1>Calculadora de edad</h1>
+        <form>
+            <label for="inputFecha">Introduce tu fecha de nacimiento (DD-MM-AAAA):</label>
+            <input type="text" id="inputFecha" placeholder="Ejemplo: 31-12-1998">
+            <button id="btnCalculate">Calcular edad</button>
+            <p class="resultado"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>Hecho por <span class="autora">Loli G.F.</span></p>
+        <div class="social-icons">
+            <a href="https://github.com/loli-digital" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-github"></i>
+                <span class="sr-only">(se abre en una nueva pestaña)</span>
+            </a>
+            <a href="https://www.linkedin.com/in/loli-guerrero/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span class="sr-only">(se abre en una nueva pestaña)</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

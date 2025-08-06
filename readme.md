@@ -19,7 +19,7 @@
     <li>Calcular la edad usando Luxon, desde esa fecha hasta hoy</li>
     <li>Mostrar la edad en años, meses y días</li>
 </ul>
-<img src="miniatura.png" alt="Calculadora de edad">
+<img src="miniatura.jpg" alt="Calculadora de edad">
 <br>
 <a href="https://roadmap.sh/projects/age-calculator" target="_blank">Enlace del ejercicio</a>
 <br>

@@ -1,0 +1,56 @@
+:root {
+    --bg-color: hsl(0, 0%, 56%);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin-top: 5rem;
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+
+    textarea {
+        padding: 1rem;
+        border: 1px solid var(--bg-color);
+        outline: none;
+        border-radius: 10px;
+        box-shadow: 0 0 5px var(--bg-color);
+        /*Para quitar el símbolo de aumentar ventana*/
+        resize: none;
+    }
+
+    .textareaRojo {
+        border: 1px solid red;
+        box-shadow: 0 0 5px red;
+        color: red;
+    }
+
+    .contador {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}

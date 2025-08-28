@@ -1,0 +1,68 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: hsl(23, 100%, 86%);
+}
+
+h1 {
+    margin: 5rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.layout-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 30rem;
+    padding: 1rem;
+    transition: all 0.3s ease-in;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 6px hsl(182, 25%, 50%);
+}
+
+input[type="text"], .btn-add {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px hsl(0, 0%, 0%);
+    outline: none;
+}
+
+.btn-add {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: hsl(182, 25%, 50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-add:hover {
+    transform: scale(1.2);
+    background-color: hsl(182, 64%, 35%);
+}
+
+.lista li {
+    font-size: 2rem;
+}
+
+
+.btn-add, .btn-delete{
+    cursor: pointer;
+}
+
+.btn-delete {
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}

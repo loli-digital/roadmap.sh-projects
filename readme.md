@@ -48,3 +48,5 @@
 <img src="modo-movil.png" alt="Aplicación del clima visto desde el móvil" width="200px">
 <br>
 <a href="https://loli-digital.github.io/app-clima-javascript/" target="_blank">Enlace a la app</a>
+<br>
+<a href="https://roadmap.sh/projects/weather-app" target="_blank">Enlace al proyecto de roadmap.sh</a>

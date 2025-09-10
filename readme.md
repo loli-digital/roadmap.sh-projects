@@ -37,9 +37,9 @@
 
 <h2>Con este ejercicio practicas:</h2>
 <ul>
-    <li>Manejo de promesas con fetch</li>
-    <li>Lectura y uso de datos JSON reales</li>
     <li>Interacción con el usuario a través del DOM</li>
+    <li>Manejo de promesas</li>
+    <li>Lectura y uso de datos JSON reales</li>
     <li>Manejo de errores</li>
 </ul>
 

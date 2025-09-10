@@ -45,6 +45,6 @@
 
 <img src="modo-pc.png" alt="Aplicación del clima visto desde el PC">
 <br>
-<img src="modo-movil.png" alt="Aplicación del clima visto desde el móvil">
+<img src="modo-movil.png" alt="Aplicación del clima visto desde el móvil" width="200px">
 <br>
-<a href="" target="_blank">Enlace a la app</a>
+<a href="https://loli-digital.github.io/app-clima-javascript/" target="_blank">Enlace a la app</a>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de temperatura</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+</head>
+
+<body>
+
+    <main class="layout">
+        <h1>Conversor de temperatura</h1>
+        <p>Escribe una temperatura, selecciona las unidades y haz click en Convertir</p>
+
+        <section class="layout__input">
+
+            <input type="text" class="input__number" name="temperatura">
+
+            <select class="select__from__unit" name="select__from__unit">
+                <option value="default">Desde la unidad</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <select class="select__to__unit" name="select__to__unit">
+                <option value="default">A la unidad</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+            <button type="button" class="btn">Convertir</button>
+
+        </section>
+
+        <p class="mensaje"></p>
+
+        <section class="layout__tabla">
+            <h2>Fórmulas para el cálculo:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tabla__color">Fahrenheit a Celsius</th>
+                        <th>Fahrenheit a Kelvin</th>
+                        <th class="tabla__color">Celsius a Fahrenheit</th>
+                        <th>Celsius a Kelvin</th>
+                        <th class="tabla__color">Kelvin a Fahrenheit</th>
+                        <th>Kelvin a Celsius</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Fahrenheit a Celsius" class="tabla__color">ºC = (ºF - 32) / 1,8</td>
+                        <td data-label="Fahrenheit a Kelvin">ºK = (ºF - 32) / 1,8 + 273,15</td>
+                        <td data-label="Celsius a Fahrenheit" class="tabla__color">ºF = (1,8 * ºC) + 32</td>
+                        <td data-label="Celsius a Kelvin">ºK = ºC + 273,15</td>
+                        <td data-label="Kelvin a Fahrenheit" class="tabla__color">ºF = ((ºK - 273,15) * 1,8) + 32</td>
+                        <td data-label="Kelvin a Celsius">ºC = ºK - 273,15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="layout__explicacion">
+
+            <h2>¿Qué es la temperatura?</h2>
+
+            <p>Es una medida que nos dice qué tan caliente o frío está algo. No es lo mismo que el calor, aunque estén relacionados. El calor es la energía total que tienen las partículas de una sustancia, mientras que la temperatura es el promedio de la energía de movimiento de esas partículas.</p>
+
+            <h2>¿Qué es la conversión de temperatura?</h2>
+
+            <p>Es la forma de "traducir" un valor de una escala de medición a otra. Es muy útil, ya que no todos los países o campos científicos usan las mismas unidades. Las escalas más comunes son Celsius, Fahrenheit y Kelvin.</p>
+
+            <h2>¿Cómo se mide la temperatura?</h2>
+
+            <p>Para medir la temperatura, usamos un instrumento llamado termómetro. La mayoría de los termómetros funcionan con un líquido (como el alcohol) que se expande al calentarse y se contrae al enfriarse.</p>
+
+            <p>Existen varias escalas para medir la temperatura, pero las más comunes son:</p>
+
+            <ul>
+                <li><strong>Celsius (°C):</strong> Es la escala que se usa en la mayor parte del mundo. El 0 °C es el punto de congelación del agua y el 100 °C es el punto de ebullición.</li>
+                <li><strong>Fahrenheit (°F):</strong> Se usa principalmente en Estados Unidos y algunos países del Caribe. En esta escala, el agua se congela a 32 °F y hierve a 212 °F.</li>
+                <li><strong>Kelvin (K):</strong> Esta escala se usa en la ciencia, especialmente en física y química. No utiliza el símbolo de grado (°) porque es una escala de temperatura absoluta. El 0 K (cero absoluto) es el punto en el que el movimiento molecular es mínimo.</li>
+            </ul>
+
+            <h2>¿Cómo se hace la conversión?</h2>
+
+            <p>La conversión se realiza usando fórmulas matemáticas. Cada fórmula es como una "receta" que te permite pasar de una unidad a otra. Mira la tabla para saber cada fórmula.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/loli-digital" rel="noopener noreferrer" target="_blank">
+                <span class="sr-only">(se abre en una nueva pestaña)</span>
+                <img src="assets/img/github.svg" alt="Icono GitHub" class="icon__github">
+            </a>
+            <a href="https://www.linkedin.com/in/loli-guerrero/" rel="noopener noreferrer" target="_blank">
+                <span class="sr-only">(se abre en una nueva pestaña)</span>
+                <img src="assets/img/linkedin.svg" alt="Icono LinkedIn" class="icon__linkedin">
+            </a>
+        </div>
+        <p>Hecho por Loli G.F.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

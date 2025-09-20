@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Creación de botón de refrescar
                 const btnRefresh = document.createElement("button");
                 btnRefresh.classList.add("btn__refresh");
-                btnRefresh.textContent = "🔄 Refrescar";
+                btnRefresh.textContent = "🔄 Actualizar";
                 layoutMensaje.appendChild(btnRefresh);
 
                 btnRefresh.addEventListener("click", () => {

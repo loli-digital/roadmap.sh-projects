@@ -1,0 +1,53 @@
+@media (width >=769px) {
+
+    .layout {
+        min-width: 60rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        select {
+            width: 30rem;
+            font-size: 1.8rem;
+        }
+
+        .layout__mensaje {
+            width: 50rem;
+
+            h2,
+            p {
+                font-size: 1.8rem;
+            }
+
+            .repo__stadistics {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+
+                p {
+                    font-size: 1.8rem;
+                }
+
+                .url__repo {
+                    font-size: 1.8rem;
+                }
+
+
+            }
+
+            .btn__refresh {
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            .mensaje {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}

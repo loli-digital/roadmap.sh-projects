@@ -1,0 +1,263 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+:root {
+    --color-1: #002B50;
+    --color-2: #FF6600;
+    --color-3: #0066CC;
+    --color-4: #66A3FF;
+    --color-5: #FFB366;
+    --color-6: #004080;
+    --color-7: #ffffff;
+    --font-family: "Roboto", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    min-height: 60dvh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-1);
+    background-image: url(../img/gradii-1920x1080.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.layout__main {
+    display: flex;
+    justify-content: center;
+}
+
+.layout {
+    max-width: 30rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+    color: var(--color-7);
+
+    h1,
+    select,
+    mensaje {
+        font-family: var(--font-family);
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    select {
+        padding: 1rem;
+        width: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        border: 2px solid var(--color-5);
+        outline: none;
+        color: var(--color-1);
+        background-color: var(--color-7);
+        font-size: 1.6rem;
+        box-shadow: 0px 0px 10px var(--color-1);
+    }
+
+    select,
+    ::picker(select) {
+        appearance: base-select;
+    }
+
+    ::picker(select) {
+        margin-top: 0.5rem;
+        border-radius: 5px;
+        border: 2px solid var(--color-5);
+
+    }
+
+    ::picker-icon {
+        margin: 0;
+        color: var(--color-1);
+    }
+
+    option {
+        padding: 1rem;
+        color: var(--color-1);
+        outline: none;
+        border: none;
+        border-bottom: 3px solid var(--color-2);
+        transition: all 0.2s ease-in-out;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &::checkmark {
+            content: "✅";
+            color: var(--color-1);
+        }
+
+        &:hover {
+            background-color: var(--color-5);
+
+        }
+    }
+
+    .layout__mensaje {
+        width: 30rem;
+        height: auto;
+        padding: 2rem;
+        background-color: var(--color-7);
+        border-radius: 5px;
+        border: 2px solid var(--color-5);
+        box-shadow: 0px 0px 10px var(--color-1);
+        font-family: var(--font-family);
+
+        h2,
+        p {
+            font-size: 1.6rem;
+            color: var(--color-1);
+            text-align: left;
+        }
+
+        .repo__description {
+            word-break: break-word;
+            hyphens: manual;
+        }
+
+        .repo__stadistics {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            p {
+                margin: 1rem 0;
+                font-size: 1.6rem;
+            }
+
+            .stadistics__fork,
+            .stadistics__stars,
+            .stadistics__issues,
+            .stadistics__url {
+                display: flex;
+                align-items: center;
+            }
+
+            .svg__fork,
+            .svg__estrellas,
+            .svg__issues {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            .svg__url {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+
+            .url__repo {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.6rem;
+                color: var(--color-1);
+                font-size: 1.6rem;
+                text-decoration: none;
+            }
+        }
+
+        .btn__refresh {
+            margin: 1rem 0;
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: var(--color-7);
+            background-color: var(--color-1);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            border: 2px solid var(--color-7);
+            box-shadow: 0px 0px 10px var(--color-1);
+            cursor: pointer;
+        }
+
+        .mensaje {
+            color: var(--color-1);
+            font-size: 1.6rem;
+            font-family: var(--font-family);
+            text-align: center;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        a {
+            display: block;
+            text-decoration: none;
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+
+            img {
+                width: 4rem;
+                background-color: var(--color-7);
+                box-shadow: 2px 2px 0px var(--color-7),
+                    3px 3px 0px var(--color-2);
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .icon__github {
+            border-radius: 100%;
+        }
+
+        .icon__linkedin {
+            border-radius: 5px;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: var(--font-family);
+        color: var(--color-7);
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

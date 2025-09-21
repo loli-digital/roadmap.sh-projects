@@ -1,6 +1,7 @@
 # roadmap.sh-projects
 Este repositorio agrupa todos mis proyectos prácticos basados en roadmap.sh, desarrollados como parte de mi aprendizaje y evolución en desarrollo frontend.
-Los proyectos originales han sido archivados y convertidos en privados para mantener una estructura más limpia y profesional. Todos los commits y el historial se han conservado mediante integración con git subtree.
+Los proyectos originales han sido archivados y convertidos en privados para mantener una estructura más limpia y profesional. 
+Todos los commits y el historial se han conservado mediante integración con git subtree.
 
 ## 🚀 Proyectos roadmap.sh – Frontend
 
@@ -16,7 +17,3 @@ Los proyectos originales han sido archivados y convertidos en privados para mant
 | [restricted-area](https://github.com/loli-digital/roadmap.sh/tree/main/frontend/restricted-area)             | Interfaz para zona restringida con validación básica                      |
 | [accordion](https://github.com/loli-digital/roadmap.sh/tree/main/frontend/accordion)                         | Acordeón interactivo para mostrar y ocultar contenido                     |
 | [calculadora-edad](https://github.com/loli-digital/roadmap.sh/tree/main/frontend/calculadora-edad)           | Calculadora de edad a partir de la fecha de nacimiento                    |
-
-Sobre los repositorios originales:
-
-Todos estos proyectos fueron desarrollados originalmente como repositorios individuales. Han sido archivados y convertidos en privados, y ahora se encuentran aquí como parte de una colección organizada. Esto permite mantener el historial de desarrollo y facilitar la navegación.

@@ -1,0 +1,54 @@
+@media (481px <=width <=768px) {
+
+    .layout {
+        max-width: 80%;
+        min-height: 75dvh;
+        padding: 2rem;
+
+        .tab-content-container {
+            width: 100%;
+        }
+    }
+}
+
+@media (769px <=width <=1024px) {
+
+    .layout {
+        max-width: 80%;
+        min-height: 50dvh;
+        padding: 2rem;
+
+        .tab-header h2 {
+            font-size: 2rem;
+        }
+
+        .tab-content-container {
+            width: 100%;
+        }
+
+        .tab-content {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (width >=1025px) {
+
+    .layout {
+        max-width: 55%;
+        min-height: 50dvh;
+        padding: 2rem;
+
+        .tab-header h2 {
+            font-size: 2rem;
+        }
+
+        .tab-content-container {
+            width: 100%;
+        }
+
+        .tab-content {
+            font-size: 1.8rem;
+        }
+    }
+}

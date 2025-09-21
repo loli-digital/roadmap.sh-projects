@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/e8ddcc3d14.js" crossorigin="anonymous"></script>
+    <title>Formulario Accesible - roadmap.sh</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="content__box">
+            <form class="formulario">
+                <label for="name">Full name
+                    <input type="text" id="name" placeholder="What should we call you?" autofocus aria-required>
+                </label>
+                <label for="email">Email
+                    <input type="email" id="email" placeholder="youremail@email.com" title="Email is already taken"
+                        aria-required>
+                </label>
+                <label for="password">Enter Password
+                    <input type="password" id="password" placeholder="XXXXXXXX" aria-required>
+                </label>
+
+                <button class="btn__eye btn__top">
+                    <i class="fa-solid fa-eye eye-1"></i>
+                </button>
+
+                <label for="confirm_password">Confirm password
+                    <input type="password" id="confirm_password" placeholder="XXXXXXXX" aria-required>
+                </label>
+
+                <button class="btn__eye btn__bottom">
+                    <i class="fa-solid fa-eye eye-2"></i>
+                </button>
+
+                <label>
+                    <input type="submit" value="Update profile" class="button__submit">
+                </label>
+            </form>
+
+            <div class="profile_completeness">
+                <div class="profile__circle"></div>
+                <p class="circle__percentage">65%</p>
+                <p>Profile Completeness</p>
+                <div class="profile__complete">
+                    <p class="p__complete">Create Account</p>
+                    <p class="p__complete">Update Roadmap Progress</p>
+                    <p class="p__complete">Setup Public Profile</p>
+                    <p>Complete your first project</p>
+                    <p>Invite your Friends</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Comic Neue", serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: cadetblue;
+}
+
+.layout {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__box {
+    width: 60rem;
+    height: 45rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.formulario {
+    flex-basis: 55%;
+    position: relative;
+}
+
+label{
+    display: inline-block;
+    padding: 1rem;
+}
+
+input:focus{
+    padding-left: 1rem;
+    background-color: lightsteelblue;
+}
+
+.btn__eye{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 23.5rem;
+    background-color: white;
+    border: none;
+}
+
+.btn__top{
+    top: 24rem;
+}
+
+.btn__bottom{
+    top: 33.5rem;
+}
+
+.fa-eye{
+    position: absolute;
+    color: black;
+    font-size: 2rem;
+    left: 0.2rem;
+    top: 0.5rem;
+    cursor: pointer;
+}
+
+input {
+    width: 20rem;
+    display: block;
+    border-radius: 10px;
+    padding: 1rem 5.6rem 1rem 0;
+    margin-top: 1.5rem;
+}
+
+input::placeholder{
+    text-align: left;
+    padding-left: 1rem;
+    font-family: "Comic Neue", serif;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+.button__submit{
+    width: 26rem;
+    margin-top: -0.1rem;
+    padding: 1rem 5rem;
+    background-color: black;
+    color: white;
+    font-family: "Comic Neue", serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.button__submit:focus{
+    color: black;
+    padding-left: 4.5rem;
+}
+
+.profile__completeness {
+    flex-basis: 45%;
+}
+
+.profile_completeness > p{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.profile__circle {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    position: relative;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid gray;
+}
+
+.circle__percentage {
+    position: absolute;
+    top: 16rem;
+    right: 58rem;
+}
+
+.profile__complete {
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #E5E5E5;
+}
+
+.p__complete {
+    color: gray;
+    text-decoration: line-through;
+}

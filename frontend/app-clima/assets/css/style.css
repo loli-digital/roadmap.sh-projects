@@ -214,7 +214,6 @@ p {
                 .tipo-clima {
                     text-align: center;
                 }
-
             }
 
             .resultado__otros__datos {
@@ -275,7 +274,6 @@ footer {
 
         .icon__linkedin {
             border-radius: 5px;
-            color: hsl(199, 85%, 36%);
         }
     }
 

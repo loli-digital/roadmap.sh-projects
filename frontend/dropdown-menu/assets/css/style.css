@@ -1,0 +1,166 @@
+:root {
+    --color-1: #EECDA3;
+    --color-2: #EF629F;
+    --color-3: #fff;
+    --color-4: #f4b7d1;
+    --color-opcion-1: #fd9f9f;
+    --color-opcion-2: rgb(255, 255, 191);
+    --color-opcion-3: #affd9f;
+    --color-opcion-4: #9ff7fd;
+    --color-opcion-5: #fdce9f;
+    --color-opcion-6: #b59ffd;
+    --color-opcion-7: #fd9ff7;
+    --color-opcion-8: #a16363;
+    --color-opcion-9: #3e3e3e;
+    --color-opcion-10: #b0afaf;
+    --color-opcion-11: #f9ebeb;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100dvh;
+    background-color: var(--color-1);
+    background: linear-gradient(to top, #EF629F, #EECDA3);
+    background: -webkit-linear-gradient(to top, #EF629F, #EECDA3);
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 4rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: var(--color-2);
+        text-shadow: 0px 0px 5px var(--color-3),
+            1px 1px 1px var(--color-3),
+            2px 2px 1px var(--color-3);
+    }
+
+    .dropdown {
+        width: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 2rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        .dropdown-header {
+            width: 22rem;
+            padding: 1rem 1.5rem;
+            position: relative;
+            text-align: center;
+            background-color: var(--color-3);
+            border-radius: 10px;
+            border: 2px solid var(--color-2);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                box-shadow: 0px 0px 5px var(--color-2);
+            }
+
+            .arrow-icon {
+                position: absolute;
+                right: 0.5rem;
+                color: var(--color-2);
+            }
+        }
+
+        .dropdown-list {
+            width: 24rem;
+            margin: 0;
+            margin-top: 1rem;
+            padding: 0;
+            max-height: 0;
+            opacity: 0;
+            background-color: var(--color-3);
+            border: 2px solid var(--color-2);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                box-shadow: 0px 0px 5px var(--color-2);
+            }
+
+            li {
+                padding: 1rem;
+                font-weight: 400;
+                text-align: center;
+                text-decoration: solid;
+                list-style-type: none;
+                border-bottom: 2px solid var(--color-2);
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:hover {
+                    box-shadow: 0px 0px 5px var(--color-2);
+                }
+
+                &[data-value="opcion1"]:hover {
+                    background-color: var(--color-opcion-1);
+                }
+
+                &[data-value="opcion2"]:hover {
+                    background-color: var(--color-opcion-2);
+                }
+
+                &[data-value="opcion3"]:hover {
+                    background-color: var(--color-opcion-3);
+                }
+
+                &[data-value="opcion4"]:hover {
+                    background-color: var(--color-opcion-4);
+                }
+
+                &[data-value="opcion5"]:hover {
+                    background-color: var(--color-opcion-5);
+                }
+
+                &[data-value="opcion6"]:hover {
+                    background-color: var(--color-opcion-6);
+                }
+
+                &[data-value="opcion7"]:hover {
+                    background-color: var(--color-opcion-7);
+                }
+
+                &[data-value="opcion8"]:hover {
+                    background-color: var(--color-opcion-8);
+                    color: var(--color-3);
+                }
+
+                &[data-value="opcion9"]:hover {
+                    background-color: var(--color-opcion-9);
+                    color: var(--color-3);
+                }
+
+                &[data-value="opcion10"]:hover {
+                    background-color: var(--color-opcion-10);
+                }
+
+                &[data-value="opcion11"]:hover {
+                    background-color: var(--color-opcion-11);
+                }
+            }
+        }
+    }
+
+    .dropdown.visible .dropdown-list {
+        max-height: 100%;
+        opacity: 1;
+    }
+}

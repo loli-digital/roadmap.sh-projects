@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Loli G.F.">
+    <meta name="description" content="Basic HTML Website Project. Exercise from roadmap.sh">
+    <meta name="keywords" content="HTML">
+    <meta property="og:title" content="Basic HTML Website Project - Contact">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="https://roadmap.sh/projects/basic-html-website">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <title>Basic HTML Website Project - Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/logo.jpg" alt="Logo Basic HTML Website" width="5%" />
+            <p>Loli G.F.</p>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>Contact</h1>
+    </header>
+
+    <main>
+        <form name="form" method="post" action="">
+            <fieldset>
+                <legend>Send your message</legend>
+                <label for="name">Name:*</label>
+                <input type="text" id="name" name="Name" required/>
+
+                <label for="email">Email:*</label>
+                <input type="email" id="email" name="Email" required/>
+
+                <label for="tel">Telephone:</label>
+                <input type="tel" id="tel" name="Telephone" pattern="[0-9]{9}"/>
+
+                <label for="message">Your message (optional):</label>
+                <textarea></textarea>
+
+                <input type="checkbox" id="privacy_policy" name="privacy_policy" /><label for="privacy_policy">I accept the privacy policy</label>
+
+                <input type="submit"/>
+                <input type="reset"/>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy All rights reserved 2024</p>
+    </footer>
+</body>
+</html>

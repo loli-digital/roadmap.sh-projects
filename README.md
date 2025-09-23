@@ -23,3 +23,14 @@ Todos los commits y el historial se han conservado mediante integración con git
 | [restricted-area](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/restricted-area)             | Interfaz para zona restringida con validación básica                      |
 | [accordion](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/accordion)                         | Acordeón interactivo para mostrar y ocultar contenido                     |
 | [calculadora-edad](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/calculadora-edad)           | Calculadora de edad a partir de la fecha de nacimiento                    |
+
+## Intermediate
+
+| Proyecto                          | Descripción                                                                 |
+|----------------------------------|------------------------------------------------------------------------------|
+| [dropdown-menu-javascript](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/single-page-resume)         | Menú desplegable interactivo con JavaScript puro         |
+| [lista-tareas-sencilla](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/basic-html-website)         | Lista de tareas sencilla con funcionalidades básicas         |
+| [github-random-repo](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/personal-portfolio-roadmap)         | Muestra un repositorio aleatorio usando la API de GitHub         |
+| [temperature-converter-javascript](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/changelog-component-roadmap.sh)         | Conversor de temperatura entre Celsius y Fahrenheit   |
+| [app-clima-javascript](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/testimonial-cards)         | App que muestra el clima actual usando la API de OpenWeather                  |
+

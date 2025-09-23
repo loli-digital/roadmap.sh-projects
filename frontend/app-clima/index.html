@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API clima</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <h1>Aplicación del clima</h1>
+        <section class="layout">
+            <article class="article-img">
+                <img class="img-cat" src="assets/img/inicio.png" alt="Imagen de un gato">
+            </article>
+            <article class="datos-clima">
+                <div class="datos__input__btn">
+                    <input type="text" class="input-ciudad" placeholder="Escribe tu ciudad">
+                    <button class="btn-buscar">Buscar</button>
+                </div>
+                
+                <select class="lista-ciudades"></select>
+                <p class="mensaje"></p>
+                <p class="ciudad"></p>
+                <div class="resultado">
+                    <div class="resultado__temperatura">
+                        <p class="temperatura-actual"></p>
+                        <p class="tipo-clima"></p>
+                    </div>
+                    <div class="resultado__otros__datos">
+                        <p>Humedad: <span class="humedad"></span></p>
+                        <p>Velocidad del viento: <span class="wind-speed"></span></p>
+                        <p>Dirección del viento: <span class="wind-direction"></span></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="social-icons">
+                <a href="https://github.com/loli-digital" rel="noopener noreferrer" target="_blank">
+                    <span class="sr-only">(se abre en una nueva pestaña)</span>
+                    <img src="assets/img/github.svg" alt="Icono GitHub" class="icon__github">
+                </a>
+                <a href="https://www.linkedin.com/in/loli-guerrero/" rel="noopener noreferrer" target="_blank">
+                    <span class="sr-only">(se abre en una nueva pestaña)</span>
+                    <img src="assets/img/linkedin.svg" alt="Icono LinkedIn" class="icon__linkedin">
+                </a>
+            </div>
+            <p>Hecho por Loli G.F.</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

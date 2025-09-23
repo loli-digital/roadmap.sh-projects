@@ -1,0 +1,300 @@
+/*Reset styles*/
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root {
+    --color-1: #E5771E;
+    --color-2: #F4F1DE;
+    --color-3: #423E37;
+    --color-4: #84A98C;
+    --color-5: #fff;
+    --color-6: #e09c65;
+    --color-7: #a6a7a6;
+    --font-family-1: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-family-2: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: var(--color-2);
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/*Cambiar estilos a móvil primero*/
+
+.page {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 5rem 0;
+    font-size: 3.5rem;
+    font-family: var(--font-family-1);
+    text-align: center;
+    text-shadow: 1px 1px var(--color-1);
+}
+
+h1,
+p {
+    color: var(--color-3);
+}
+
+.layout {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+
+    .article-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 40%;
+
+        .img-cat {
+            width: 25rem;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            transition: opacity 0.3s ease-in-out;
+        }
+    }
+
+
+    .datos-clima {
+        margin: 2rem 0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+        font-family: var(--font-family-2);
+
+        .datos__input__btn {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            .input-ciudad {
+                width: 25rem;
+                height: 4.8rem;
+                padding: 1rem;
+                outline: none;
+                border: 1px solid var(--color-1);
+                border-radius: 5px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    box-shadow: 0px 0px 5px var(--color-1);
+                }
+            }
+
+            .btn-buscar {
+                width: 10rem;
+                padding: 1.5rem;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background-color: var(--color-1);
+                border: 1px solid var(--color-5);
+                color: var(--color-5);
+                font-weight: 600;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    box-shadow: 1px 1px 1px var(--color-6),
+                                2px 2px 1px var(--color-1),
+                                3px 3px 1px var(--color-6),
+                                4px 4px 1px var(--color-5);
+                }
+            }
+        }
+
+        /*Para darle estilos a option*/
+        select.lista-ciudades,
+        ::picker(select){
+            appearance: base-select;
+        }
+
+        select.lista-ciudades {
+            display: none;
+            width: 30rem;
+            height: 6rem;
+            margin-top: 2rem;
+            padding: 2rem;
+            border: 1px solid var(--color-4);
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            font-size: 1.5rem;
+
+            &:hover,
+            &:focus {
+                box-shadow: 0px 0px 5px var(--color-4);
+            }
+
+            option {
+                background-color: var(--color-7);
+                color: var(--color-5);
+                padding: 0.5rem 0;
+
+                &:hover, &:checked  {
+                    background-color: var(--color-4);
+                }
+            }
+
+        }
+
+        ::picker(select){
+            border-radius: 5px;
+            border-color: var(--color-1);
+        }
+        
+        p {
+            font-size: 2rem;
+            font-family: var(--font-family-2);
+        }
+
+        .ciudad {
+            margin: 3rem;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .resultado {
+            width: 90%;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            display: none;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background-color: var(--color-5);
+            border-radius: 5px;
+            border: 3px solid var(--color-4);
+            box-shadow: 0px 0px 10px var(--color-4);
+
+            .resultado__temperatura {
+                .temperatura-actual {
+                    margin: 0;
+                    font-size: 7rem;
+                }
+
+                .tipo-clima {
+                    text-align: center;
+                }
+
+            }
+
+            .resultado__otros__datos {
+
+                p {
+                    width: 100%;
+                    padding: 1.5rem 0;
+                    line-height: 3rem;
+                    border-bottom: 2px solid var(--color-4);
+                }
+
+                p:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 15rem;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--color-4);
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        a {
+            display: block;
+            text-decoration: none;
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            transition: all 200ms linear;
+
+            img {
+                width: 4rem;
+            }
+
+        }
+
+        a:hover {
+            transform: none;
+        }
+
+
+        .icon__github {
+            border-radius: 100px;
+        }
+
+        .icon__linkedin {
+            border-radius: 5px;
+            color: hsl(199, 85%, 36%);
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: var(--font-family-2);
+        color: var(--color-3);
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

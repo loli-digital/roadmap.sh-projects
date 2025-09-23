@@ -7,3 +7,5 @@
 <img src="temperature-converter.png" alt="Convertidor de temperatura">
 <br>
 <a href="https://roadmap.sh/projects/temperature-converter" target="_blank">Enlace al ejercicio de roadmap.sh</a>
+<br>
+<a href="https://mini-proyectos.pages.dev" target="_blank">Ver demo</a>

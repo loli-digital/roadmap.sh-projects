@@ -9,6 +9,8 @@ Todos los commits y el historial se han conservado mediante integración con git
 
 | Proyecto                          | Descripción                                                                 |
 |----------------------------------|------------------------------------------------------------------------------|
+| [single-page-resume](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/single-page-resume)         | Currículum Vitae sencillo sólo en HTML         |
+| [basic-html-website](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/basic-html-website)         | Página web sencilla sólo en HTML         |
 | [personal-portfolio-roadmap](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/personal-portfolio-roadmap)         | Página de presentación personal con diseño responsive y secciones animadas         |
 | [changelog-component-roadmap.sh](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/changelog-component-roadmap.sh)         | Componente visual para mostrar cambios o actualizaciones   |
 | [testimonial-cards](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/testimonial-cards)         | Tarjetas con testimonios de usuarios en diseño responsivo                  |

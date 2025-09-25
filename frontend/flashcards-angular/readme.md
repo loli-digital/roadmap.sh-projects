@@ -19,7 +19,6 @@
 <p>npm install</p>
 <p>ng serve</p>
 <br>
-
-<a href="https://roadmap.sh/projects/flash-cards">Enlace al proyecto</a>
-<br>
 <img src="flash-cards-angular.png" alt="Proyecto de tarjetas dinámicas en Angular">
+<br>
+<a href="https://roadmap.sh/projects/flash-cards">Enlace al proyecto</a>

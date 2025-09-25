@@ -23,6 +23,8 @@ Todos los commits y el historial se han conservado mediante integración con git
 | [restricted-area](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/restricted-area)             | Interfaz para zona restringida con validación básica                      |
 | [accordion](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/accordion)                         | Acordeón interactivo para mostrar y ocultar contenido                     |
 | [calculadora-edad](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/calculadora-edad)           | Calculadora de edad a partir de la fecha de nacimiento                    |
+| [flash-cards](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/flashcards-angular)           | Tarjetas dinámicas (preguntas y respuestas) realizada en Angular                    |
+
 
 ## Intermediate
 

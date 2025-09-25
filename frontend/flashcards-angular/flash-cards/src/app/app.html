@@ -1,0 +1,56 @@
+<header>
+  <h1>{{ title() }}</h1>
+  <p>¿Cuánto sabes de JavaScript?</p>
+</header>
+
+<main>
+  <section class="layout__barra__progreso">
+    <div class="barra-contenedor">
+      <div class="barra-progreso" [style.width.%]="progreso"></div>
+    </div>
+    <p>{{ indiceActual() + 1 }} / {{ flashcards.length }}</p>
+  </section>
+
+  <section class="layout__card">
+    <article class="layout__flash__cards">
+      <div class="flash__cards__preguntas">
+        <p *ngIf="!mostrarRespuesta()">
+          {{ flashcards[indiceActual()]?.pregunta }}
+        </p>
+
+        <p *ngIf="mostrarRespuesta()">
+          {{ flashcards[indiceActual()]?.respuesta }}
+        </p>
+      </div>
+
+      <div class="flash__cards__botones">
+        <button class="btn__previous" (click)="anterior()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-left">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M11 7l-5 5l5 5" />
+            <path d="M17 7l-5 5l5 5" />
+          </svg>
+          Anterior
+        </button>
+
+        <button class="btn__mostrar__respuesta" (click)="btnMostrarRespuesta()">
+          {{ mostrarRespuesta() ? 'Ocultar respuesta' : 'Mostrar respuesta' }}
+        </button>
+
+        <button class="btn__next" (click)="siguiente()">Siguiente
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-chevrons-right">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7 7l5 5l-5 5" />
+            <path d="M13 7l5 5l-5 5" />
+          </svg>
+        </button>
+      </div>
+    </article>
+  </section>
+</main>
+
+<router-outlet />

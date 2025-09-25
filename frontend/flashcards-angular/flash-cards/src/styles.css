@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Chewy';
+    src: url('./assets/fonts/Chewy-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Chewy-Regular.woff') format('woff'),
+        url('./assets/fonts/Chewy-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('./assets/fonts/RobotoFlex-Regular.woff2') format('woff2'),
+        url('./assets/fonts/RobotoFlex-Regular.woff') format('woff'),
+        url('./assets/fonts/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-1: #2d3250;
+    --color-2: #424769;
+    --color-3: #676f9d;
+    --color-4: #f9b17a;
+    --color-5: #fff;
+    --font-family-1: 'Chewy';
+    --font-family-2: 'Roboto Flex';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url("assets/img/egg-shell.png");
+    background-color: var(--color-1);
+}
+
+h1,
+p {
+    color: var(--color-5);
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: var(--font-family-1);
+}
+
+p {
+    font-size: 2rem;
+    font-family: var(--font-family-2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .layout__barra__progreso {
+        width: 45rem;
+        height: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        border: 2px solid var(--color-5);
+        background-color: var(--color-3);
+
+        .barra-contenedor {
+            width: 85%;
+            height: 3rem;
+            margin-left: 1rem;
+            background-color: var(--color-2);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .barra-progreso {
+            height: 100%;
+            background-color: var(--color-1);
+            transition: width 0.3s ease;
+        }
+
+        p {
+            width: 5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .layout__card {
+        width: 45rem;
+        height: 35rem;
+        border-radius: 10px;
+        border: 2px solid var(--color-5);
+        background-color: var(--color-3);
+
+        .layout__flash__cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .flash__cards__preguntas,
+            .flash__cards__botones {
+                width: 42rem;
+                margin: 1rem;
+                border-radius: 10px;
+                color: var(--color-5);
+                background-color: var(--color-2);
+            }
+
+            .flash__cards__preguntas {
+                height: 25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    width: 80%;
+                }
+            }
+
+            .flash__cards__botones {
+                height: 5rem;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                button {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+                    font-size: 1.8rem;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .btn__previous,
+                .btn__next {
+                    font-family: var(--font-family-2);
+                    background-color: transparent;
+                    color: var(--color-5);
+                }
+
+                .btn__mostrar__respuesta {
+                    padding: 1rem;
+                    border-radius: 5px;
+                    background-color: var(--color-4);
+                    font-family: var(--font-family-2);
+                    font-weight: bold;
+                    color: var(--color-1);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    main {
+
+        .layout__barra__progreso {
+            width: 50rem;
+        }
+
+        .layout__card {
+            width: 50rem;
+
+            .layout__flash__cards {
+
+                .flash__cards__preguntas,
+                .flash__cards__botones {
+                    width: 48rem;
+                }
+            }
+
+
+        }
+    }
+}

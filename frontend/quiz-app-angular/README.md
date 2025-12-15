@@ -14,6 +14,12 @@ Este es un proyecto de aplicación web interactiva desarrollada con Angular y es
 
 [Este es un ejercicio de roadmap.sh](https://roadmap.sh/projects/quiz-app)
 
+---
+
+Portada del proyecto:
+
+![Juego de preguntas y respuestas](https://github.com/loli-digital/roadmap.sh-projects/blob/main/frontend/quiz-app-angular/quiz-app-angular.png)
+
 --- 
 
 ## Configuración Local y Ejecución

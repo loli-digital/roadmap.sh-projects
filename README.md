@@ -34,4 +34,5 @@ Todos los commits y el historial se han conservado mediante integración con git
 | [lista-tareas-sencilla](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/lista-tareas)         | Lista de tareas sencilla con funcionalidades básicas         |
 | [github-random-repo](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/github-random-repo)         | Muestra un repositorio aleatorio usando la API de GitHub         |
 | [temperature-converter-javascript](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/temperature-converter)         | Conversor de temperatura entre Celsius y Fahrenheit   |
+| [quiz-app-angular](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/quiz-app-angular)         | Juego de preguntas sobre JavaScript, realizado en Angular                  |
 | [app-clima-javascript](https://github.com/loli-digital/roadmap.sh-projects/tree/main/frontend/app-clima)         | App que muestra el clima actual usando la API de OpenWeather                  |

@@ -1,0 +1,15 @@
+<section class="progress-container w-full max-w-lg mx-auto sm:-mt-18 p-4">
+  <div class="progress-text text-sm font-semibold mb-2 text-gray-700 dark:text-gray-300 text-center">
+    Pregunta {{ currentQuestionIndex + 1 }} de {{ totalQuestions }} 
+    (<span class="text-indigo-600 dark:text-indigo-400 font-bold">{{ progressPercentage }}%</span> completado)
+  </div>
+
+  <div class="progress-bar-outline w-full h-3 bg-gray-200 rounded-full overflow-hidden shadow-inner">
+    
+    <div 
+      class="progress-fill h-full bg-indigo-500 transition-all duration-700 ease-out" 
+      [style.width.%]="progressPercentage"
+    >
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+.answer-button.selected {
+    background-color: #6366f1; 
+    color: white;
+    border-color: #6366f1;
+    transform: scale(1.02);
+}
+
+.answer-button.selected:hover {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+}
+
+.answer-button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.answer-button.selected[disabled] {
+    opacity: 1; 
+}

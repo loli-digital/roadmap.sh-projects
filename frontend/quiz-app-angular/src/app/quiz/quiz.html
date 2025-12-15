@@ -1,0 +1,49 @@
+<section class="quiz-game-container p-6">
+  <div class="header-section flex justify-between items-center">
+
+    <app-timer [timeLimit]="30" [questionIndex]="currentQuestionIndex" (timeUp)="handleTimeUp()"
+      [stopTimerSignal]="timerShouldStop"></app-timer>
+
+    <span class="text-xl font-bold text-gray-600">Puntuación: {{ score }}</span>
+  </div>
+
+  <app-progress-bar [currentQuestionIndex]="currentQuestionIndex" [totalQuestions]="totalQuestions">
+  </app-progress-bar>
+
+  <hr class="my-6 border-gray-300">
+
+  <app-question-card *ngIf="currentQuestion" [question]="currentQuestion" [hasAnswered]="hasAnswered"
+    [correctAnswer]="currentQuestion.correctAnswer" (answerSelected)="handleAnswer($event)"></app-question-card>
+
+  <div *ngIf="!currentQuestion && currentQuestionIndex < totalQuestions" class="text-center text-lg text-gray-500 mt-8">
+    Cargando la siguiente pregunta...
+  </div>
+
+  <div class="flex justify-between items-center p-4">
+
+    <button (click)="returnToTopics()" class="
+      px-4 py-2 
+      bg-cyan-400 
+      text-gray-800 
+      font-medium 
+      rounded-lg 
+      shadow-md 
+      hover:bg-cyan-500 
+      hover:scale-110
+      focus:outline-none 
+      focus:ring-2 
+      focus:ring-cyan-400
+      transition-all 
+      duration-300
+      cursor-pointer
+    ">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-5 h-5 inline mr-1 -mt-0.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+      </svg>
+      Volver a Temas
+    </button>
+
+  </div>
+
+</section>

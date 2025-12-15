@@ -1,0 +1,17 @@
+.timer-container.danger {
+    animation: pulse-danger 1s infinite alternate; 
+    border-color: #ef4444;
+}
+
+.timer-container.danger .timer-display {
+    color: #b91c1c;
+}
+
+@keyframes pulse-danger {
+    from {
+        box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
+    }
+}

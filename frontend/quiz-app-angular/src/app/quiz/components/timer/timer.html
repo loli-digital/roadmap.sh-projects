@@ -1,0 +1,13 @@
+<section class="timer-container 
+             p-3 w-32 mx-auto rounded-full shadow-lg 
+             bg-white dark:bg-gray-800 
+             flex items-center justify-center border-4 border-indigo-400" [class.danger]="isTimeLow">
+             
+  <span class="timer-display 
+               text-2xl font-extrabold text-indigo-700 dark:text-indigo-300 
+               tabular-nums">
+
+    {{ minutes }}:{{ seconds }}
+
+  </span>
+</section>
